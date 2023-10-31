@@ -1,0 +1,35 @@
+.choose
+  margin-top: 100px
+  &__tabs
+    margin-top: 50px
+    display: flex
+    justify-content: space-evenly
+  &__btn
+    background: none
+    border: none
+    cursor: pointer
+  &__items
+    margin-top: 100px
+    display: none
+    grid-template: repeat(1, 354px) / repeat(4, 270px)
+    grid-auto-rows: repeat(3, 354px) 
+    gap: 100px 40px
+  &__card
+    border: 1px solid #06F
+    display: flex
+    flex-direction: column
+    gap: 20px
+    align-items: center
+  &__link
+    color: #06F
+    font-size: 16px
+    font-weight: 400 
+    border-top: 1px solid #06F
+    width: 100%
+    text-align: center
+  
+.choose__btn.choose__btn--active
+  color: #06F
+
+.choose__items.choose__items--active
+  display: grid
