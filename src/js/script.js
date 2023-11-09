@@ -24,6 +24,16 @@ function open(evt) {
   document.querySelector(`#${button}`).classList.add('choose__items--active');
 }
 
+//меню
+
+const menuBtn = document.querySelector('.menu_btn');
+const menu = document.querySelector('.hearder__list');
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('hearder__list--active');
+});
+
+
 
 //слайдер
 const swiper = new Swiper(".swiper", {
